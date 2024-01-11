@@ -1,9 +1,9 @@
 import "./App.css";
 import { useState, useEffect } from "react";
 import ContriesAPI from "./API/Contries";
-import Search from "./components/Search";
-import Card from "./components/card";
 
+import Search from "./components/Search"
+import Card2 from "./components/Card2";
 
 function App() {
   const [search, setSearch] = useState("");
@@ -36,7 +36,7 @@ function App() {
             {search.length < 1
               ? data.map((m) => (
                   <div key={m.name.common}>
-                    <Card
+                    <Card2
                       name={m.name.common}
                       region={m.region}
                       area={m.area}
@@ -47,7 +47,7 @@ function App() {
                 ))
               : newData.map((m) => (
                   <div key={m.name.common}>
-                    <Card
+                    <Card2
                       name={m.name.common}
                       region={m.region}
                       area={m.area}
