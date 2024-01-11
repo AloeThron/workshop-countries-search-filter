@@ -4,6 +4,7 @@ import ContriesAPI from "./API/Contries";
 import Search from "./components/Search";
 import Card from "./components/card";
 
+
 function App() {
   const [search, setSearch] = useState("");
   const [data, setData] = useState([]);

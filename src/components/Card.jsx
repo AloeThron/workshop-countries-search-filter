@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function card(props) {
+export default function Card(props) {
 
   function formatNumber(number) {
     return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
